@@ -1,0 +1,63 @@
+header {
+  height: 120px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 20px 0 10px 0;
+  width: 100%;
+}
+
+/* logo */ 
+.band-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.band-logo__image {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+}
+
+/* nav menu */ 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 30px;
+  font-size: 15px;
+  width: 500px;
+  margin: 0;
+  border-bottom: 2px #BA0000 solid;
+  border-bottom-left-radius: 100px 1px;
+  border-bottom-right-radius: 100px 1px;
+  padding: 0;
+}
+
+.navigation__item {
+  text-transform: uppercase;
+  font-family: $font-titles;
+  font-weight: bold;
+  margin: 0 15px 0 15px;
+}
+
+
+@media (max-width: 760px) {
+
+  .navigation {
+    display: none;
+  }
+ }
+

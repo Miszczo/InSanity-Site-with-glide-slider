@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In Sanity band</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel = "stylesheet" href = "css/normalize.css">
+  <script src="https://kit.fontawesome.com/ecbfd4882f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="post">
+      <div class="header-wrapper">
+        <div class="band-logo">
+          <a href="."><img class="band-logo__image" src="https://i.postimg.cc/6Qrk62gd/In-sanity-cover.png" alt="band-logo"></a>           
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item header-button-selector" id="home"><a href="#">home</a></li>
+            <li class="navigation__item header-button-selector" id="about"><a href="#">o nas</a></li>
+            <li class="navigation__item header-button-selector" id="media"><a href="#">media</a></li>
+            <li class="navigation__item header-button-selector" id="contact"><a href="#">kontakt</a></li>
+          </ul>
+        </nav>
+      </div>        
+    </header>
+    <!-- main section -->
+    <main>
+      <div class="welcome-page">
+        <img class="welcome-page__image img-responsive" src="https://i.postimg.cc/QC3rvmdk/In-sanity-logo-tiny-no-bg3.png" alt="insanity">
+        <a href="#" class="welcome-page__button button">wejdź</a>       
+      </div>
+      <div class="loading-page post">
+        <div class="loading-page__loading-square post">
+          <div class="loading-progress-background"></div>
+          <div class="loading-progress-counter"></div>
+        </div>
+      </div>
+      <div class="main-wrapper post">
+        <div class="main-wrapper__home pages--config pages-selector post" id="home">
+          <h1>Jesteśmy In Sanity!</h1>
+          <div class="home__images home-div">      
+            <!-- iframe -->
+            <div class="video-container">
+              <iframe width="900" height="600" src="https://www.youtube.com/embed/j3Bc9lpDwuE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>          
+          </div>        
+        </div>
+        <!-- about section with carousel -->
+        <div class="main-wrapper__about pages--config pages-selector post" id="about">
+          <div class="about-wrapper">
+
+          </div>  
+        </div>
+        <!-- media -->
+        <div class="main-wrapper__media pages--config pages-selector post" id="media">
+          <h1>Media</h1>
+          <br>
+          <br>
+        </div>
+        <!-- contact -->
+        <div class="main-wrapper__contact pages--config pages-selector post" id="contact">
+          <p>e-mail:</p>
+        </div>   
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="post">
+      <div class="social-media">
+        <div class="social-media__icon">
+          <a href="https://www.facebook.com/insanitypoland" target="_blank" alt="icon">
+            <i class="fab fa-facebook-f"></i>
+          </a> 
+        </div>
+        <div class="social-media__icon">
+          <a href="https://www.instagram.com/insanityband/" target="_blank" alt="icon">
+            <i class="fab fa-instagram"></i>
+          </a> 
+        </div>
+        <div class="social-media__icon">
+          <a href="https://www.youtube.com/channel/UCzYNv04JGNOi-pJNlfK3dNQ" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a> 
+        </div>
+      </div>
+    </div>     
+    </footer>
+  </div>
+  <!-- youtube iframe API -->
+  <!-- <script>
+    // This code loads the IFrame Player API code asynchronously.
+    const tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    let player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        playerVars: {
+
+            enablejsapi: 1,
+            disablekb: 1,
+            showinfo: 0,
+            controls: 0,
+            fs: 0,
+            
+        },
+        height: '100%',
+        width: '100%',
+        videoId: 'j3Bc9lpDwuE?',
+        playerVars: { 'autoplay': 1, 'controls': 1, 'showinfo': 0, },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+    function onPlayerReady() {
+      const welcomeButton = document.querySelector('.welcome-page__button');
+      welcomeButton.addEventListener('click', () => {
+        console.log('click');
+        player.playVideo();
+      });
+      // e.target.playVideo();
+    }
+
+    let done = false;
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+        done = true;
+      }
+    }
+  </script> -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

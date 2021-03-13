@@ -1,0 +1,40 @@
+.carousel-inner .carousel-caption {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-inner .carousel-caption p {
+  padding: 0 20px 0 20px;
+  font-size: 18px;
+}
+
+.carousel-item{
+  max-height: 580px;
+  height: 100%;
+  max-width: 1000px !important;
+  width: auto;
+} 
+.carousel-item img{
+  max-height: 580px;
+  height: 100%;
+  max-width: 1000px !important;
+  width: auto;
+}
+.carousel-indicators{
+  height: auto;
+  width: auto;
+}
+
+@media (max-width: 760px) {
+
+  .carousel-inner .carousel-caption p {
+    padding: 0 20px 0 20px;
+    font-size: 12px;
+  }
+
+  .carousel-inner .carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+ }
